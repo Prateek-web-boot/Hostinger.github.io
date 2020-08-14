@@ -1,0 +1,124 @@
+.signup__form .button {
+    border-radius: 10px;
+    padding: 0.6rem;
+    font-weight: bold;
+    border: none;
+    border: 1px solid green;
+    background: green;
+    color: white;
+    margin:0;
+    font-size: 0.9rem;
+    
+}
+
+button {
+    border: none;
+}
+
+.button:hover,
+.button:active {
+    color: rgb(64, 170, 64);
+    cursor: pointer;
+    border: 1.5px solid rgb(64, 170, 64);
+    background: white;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.signup__form input,
+.signup__form select
+{
+    display: block;
+    width: 100%;
+    margin: 0.7rem 0;
+    padding: 0.3rem; 
+    border: 1px solid #ccc;
+
+}
+
+.signup__title {
+    color: rgb(211, 29, 29);
+    text-align: center;
+    font-size: 2rem;
+   padding-top: 2rem;
+}
+
+.signup__form {
+    padding: 1rem;
+}
+
+.signup__form input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    
+}
+
+label{
+    font-weight: bold;
+}
+
+.signup__form input,
+.signup__form select {
+    outline: none;
+    border: 1px solid green;
+}
+
+.signup__form input,
+.signup__form select {
+    background-color: rgb(171, 241, 171);
+}
+
+.signup__form a {
+    text-decoration: none;
+    color: rgb(116, 79, 79);
+  
+}
+
+
+@media (min-width: 41rem) {
+    .signup__form {
+        margin: auto;
+        width: 40rem;
+        display: grid;
+        grid-template-columns: 10rem auto;
+        grid-row-gap: 0.5rem;
+    }
+
+    #title {
+        grid-column: span 2;
+    }
+
+    .signup__form--checkbox {
+      grid-column: span 2;   
+    }
+
+    .signup__title {
+        font-size: 2.2rem;
+    }
+
+    label {
+        align-self: center;
+    }
+}
+
+
+/*  extra classes  */
+.error {
+    color: red;
+    margin-top: -0.5rem;
+    padding: 0 0.5rem;
+    display: block;
+    grid-column: 2/3;
+}
+
+.error__border {
+    border: 1px solid red;
+    background-color: rgb(233, 181, 181);
+}
+
+.checked {
+    color: green;
+}
+

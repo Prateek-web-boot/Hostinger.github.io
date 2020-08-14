@@ -1,0 +1,144 @@
+main {
+    padding-top: 6.2rem;
+}
+
+.plan__detail {
+    border: 3px solid green;
+    padding: 2rem;
+    margin: 1rem 0;
+    width: 70%;
+    border-left: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.plan__detail:hover {
+    border: 2px solid rgb(201, 83, 83);
+    box-shadow: 4px 4px 10px grey;
+    border-left: none;
+}
+
+.plan__detail a {
+    text-decoration: none;
+}
+
+.plan__badge {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: white;
+    background: #f25;
+    padding: 0.6rem;
+    font-weight: 500;
+    transform: rotateZ(45deg) translateX(3.5rem) translateY(-1rem);
+    width: 12rem;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+@media (min-width: 40rem) {
+    .plan__badge {
+        font-size: 0.8rem;
+    }
+
+    .plan__title {
+        margin-top: 0;
+    }
+}
+
+.plan__title {
+    font-weight: bold;
+    color: black;
+    padding: 0.6rem;
+    margin-top: 1rem;
+}
+
+.plan__tagline {
+    font-weight: bold;
+    color: rgb(119, 115, 115);
+    padding: 0.5rem;
+}
+
+.plan__para {
+    border: 1px solid rgb(40, 119, 40);
+    padding: 1rem;
+    font-weight: 100;
+    color: black;
+    margin-top: 1rem;
+    background: white;
+}
+
+.plan__detail-one {
+    background: rgb(151, 230, 223, 0.9);
+}
+
+.plan__detail-two {
+    background: rgb(164, 206, 122, 0.9);
+    float: right;
+    text-align: right;
+    border: 3px solid green;
+    border-right: none; 
+}
+
+.plan__detail-two:hover {
+    border: 2px solid rgb(221, 30, 30);
+    border-right: none;
+}
+
+.clearfix {
+    /* it clears the float from left and right if applied on some
+     element before it. */ 
+    clear: both;
+}
+
+.plan__detail-three {
+    background : rgb(53, 165, 53, 0.9);
+}
+
+.plan__title-premium {
+    color: white;
+}
+.plan__tagline-premium {
+    color: white;
+}
+
+.plan__para-premium {
+    color: rgb(53, 165, 53);
+    background: white;
+    border: none;
+}
+
+.back__image {
+    background-image: url('plans-background.jpg');
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    filter: grayscale(30%);
+  }
+
+
+  @media (min-width: 40rem) {
+
+    main {
+        margin: 3rem auto;
+        max-width: 1300px;
+    }
+  }
+  
+
+  @media (min-width: 1300px) {
+      .plan__detail {
+          border-left: 3px solid green;
+      }
+
+      .plan__detail-two {
+        border-right: 3px solid green;
+      }
+
+      .plan__detail:hover,
+      .plan__detail:active{
+       border: 2px solid rgb(221, 30, 30)
+      }
+  }
